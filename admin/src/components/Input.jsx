@@ -22,7 +22,13 @@ const Input = (props) => {
       }}
     >
       {/* Top divider separator */}
-      <Divider marginBottom={6} />
+      <Box
+        marginBottom={8}
+        style={{
+          borderTop: "2px solid",
+          borderColor: "var(--strapi-neutral-200)",
+        }}
+      />
 
       {/* Section header box */}
       <Box
