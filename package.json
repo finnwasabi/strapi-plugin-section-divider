@@ -1,0 +1,69 @@
+{
+  "name": "@tunghtml/strapi-plugin-section-divider",
+  "version": "1.0.7",
+  "description": "A Strapi custom field plugin to add visual section dividers in content-type forms",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "custom-field",
+    "section-divider",
+    "divider",
+    "separator"
+  ],
+  "homepage": "https://github.com/finnwasabi/strapi-plugin-section-divider#readme",
+  "bugs": {
+    "url": "https://github.com/finnwasabi/strapi-plugin-section-divider/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnwasabi/strapi-plugin-section-divider.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Tung Le",
+    "email": "tunghtml@example.com"
+  },
+  "maintainers": [
+    {
+      "name": "Tung Le",
+      "email": "tunghtml@example.com"
+    }
+  ],
+  "main": "./strapi-server.js",
+  "exports": {
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./strapi-admin.js",
+      "require": "./strapi-admin.js",
+      "default": "./strapi-admin.js"
+    },
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./strapi-server.js",
+      "require": "./strapi-server.js",
+      "default": "./strapi-server.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "admin",
+    "strapi-admin.js",
+    "strapi-server.js"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "strapi": {
+    "name": "section-divider",
+    "displayName": "Section Divider",
+    "description": "Add visual section dividers to organize your content-type forms",
+    "kind": "plugin"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0 || ^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  }
+}
