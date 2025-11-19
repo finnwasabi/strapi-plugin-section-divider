@@ -1,4 +1,4 @@
-import { Box, Typography, Divider } from "@strapi/design-system";
+import { Box, Typography } from "@strapi/design-system";
 
 const Input = (props) => {
   // Debug: log all props to see what contains the label
@@ -25,18 +25,21 @@ const Input = (props) => {
       <Box
         marginBottom={8}
         style={{
-          borderTop: "2px solid",
-          borderColor: "var(--strapi-neutral-200)",
+          borderTop: "1px solid var(--strapi-neutral-200)",
         }}
       />
 
       {/* Section header box */}
       <Box
         marginBottom={0}
-        padding={3}
+        paddingTop={2}
+        paddingBottom={2}
+        paddingLeft={3}
+        paddingRight={3}
         background="neutral100"
-        borderColor="neutral200"
-        hasRadius
+        style={{
+          borderBottom: "1px solid var(--strapi-neutral-200)",
+        }}
       >
         <Typography
           variant="omega"
