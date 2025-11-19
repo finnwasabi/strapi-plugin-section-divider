@@ -1,9 +1,18 @@
-import React from "react";
-import { Box, Typography } from "@strapi/design-system";
+import { Box, Typography, Divider } from "@strapi/design-system";
 
-const Input = ({ name, attribute, intlLabel }) => {
-  // Priority: intlLabel (from metadata) > attribute.label > name
-  const label = intlLabel?.defaultMessage || attribute?.label || name;
+const Input = (props) => {
+  // Debug: log all props to see what contains the label
+  console.log("Section Divider Props:", props);
+
+  const { name, attribute, intlLabel, label: propsLabel } = props;
+
+  // Try different sources for label
+  const displayLabel =
+    propsLabel ||
+    intlLabel?.defaultMessage ||
+    intlLabel?.id ||
+    attribute?.label ||
+    name;
 
   return (
     <Box
@@ -12,20 +21,14 @@ const Input = ({ name, attribute, intlLabel }) => {
         gridColumn: "1 / -1",
       }}
     >
-      {/* Top border separator */}
-      <Box
-        marginBottom={6}
-        borderColor="neutral200"
-        style={{
-          borderTop: "1px solid",
-        }}
-      />
+      {/* Top divider separator */}
+      <Divider marginBottom={6} />
 
       {/* Section header box */}
       <Box
         marginBottom={0}
         padding={3}
-        background="neutral0"
+        background="neutral100"
         borderColor="neutral200"
         hasRadius
       >
@@ -35,7 +38,7 @@ const Input = ({ name, attribute, intlLabel }) => {
           fontWeight="semiBold"
           as="div"
         >
-          {label}
+          {displayLabel}
         </Typography>
       </Box>
     </Box>
