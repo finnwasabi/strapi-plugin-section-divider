@@ -1,9 +1,7 @@
+import React from "react";
 import { Box, Typography, Divider } from "@strapi/design-system";
 
-const Input = (props) => {
-  // Debug: log all props to see what contains the label
-  console.log("Section Divider Props:", props);
-
+const Input = React.memo((props) => {
   const { name, attribute, intlLabel, label: propsLabel } = props;
 
   // Try different sources for label
@@ -37,6 +35,8 @@ const Input = (props) => {
       </Box>
     </Box>
   );
-};
+});
+
+Input.displayName = "SectionDividerInput";
 
 export default Input;
