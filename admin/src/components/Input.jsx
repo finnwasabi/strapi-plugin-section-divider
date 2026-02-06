@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Typography, Divider } from "@strapi/design-system";
+import { Box, Typography } from '@strapi/design-system';
+import React from 'react';
 
 const Input = React.memo((props) => {
   const { name, attribute, intlLabel, label: propsLabel } = props;
@@ -16,12 +16,9 @@ const Input = React.memo((props) => {
     <Box
       width="100%"
       style={{
-        gridColumn: "1 / -1",
+        gridColumn: '1 / -1',
       }}
     >
-      {/* Top divider separator */}
-      <Divider marginBottom={8} />
-
       {/* Section header box */}
       <Box marginBottom={0} padding={3} background="neutral100" hasRadius>
         <Typography
@@ -37,6 +34,6 @@ const Input = React.memo((props) => {
   );
 });
 
-Input.displayName = "SectionDividerInput";
+Input.displayName = 'SectionDividerInput';
 
 export default Input;
