@@ -1,6 +1,6 @@
 {
   "name": "@tunghtml/strapi-plugin-section-divider",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A Strapi custom field plugin to add visual section dividers in content-type forms",
   "keywords": [
     "strapi",
@@ -21,7 +21,8 @@
   "license": "MIT",
   "author": {
     "name": "Tung Le",
-    "email": "tunghtml@example.com"
+    "email": "nhattung1511@gmail.com",
+    "url": "https://tungln.is-a.dev"
   },
   "maintainers": [
     {

@@ -186,3 +186,7 @@ MIT © [Tung Le](https://github.com/finnwasabi)
 - [GitHub Repository](https://github.com/finnwasabi/strapi-plugin-section-divider)
 - [npm Package](https://www.npmjs.com/package/@tunghtml/strapi-plugin-section-divider)
 - [Strapi Documentation](https://docs.strapi.io)
+
+---
+
+Built by **Tung Le**. More Strapi plugins and case studies at [tungln.is-a.dev](https://tungln.is-a.dev).
