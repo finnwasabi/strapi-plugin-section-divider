@@ -1,6 +1,6 @@
 {
   "name": "@tunghtml/strapi-plugin-section-divider",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A Strapi custom field plugin to add visual section dividers in content-type forms",
   "keywords": [
     "strapi",
@@ -27,19 +27,19 @@
   "maintainers": [
     {
       "name": "Tung Le",
-      "email": "tunghtml@example.com"
+      "email": "nhattung1511@gmail.com"
     }
   ],
   "main": "./strapi-server.js",
   "exports": {
     "./strapi-admin": {
-      "source": "./admin/src/index.js",
+      "source": "./strapi-admin.js",
       "import": "./strapi-admin.js",
       "require": "./strapi-admin.js",
       "default": "./strapi-admin.js"
     },
     "./strapi-server": {
-      "source": "./server/src/index.js",
+      "source": "./strapi-server.js",
       "import": "./strapi-server.js",
       "require": "./strapi-server.js",
       "default": "./strapi-server.js"
