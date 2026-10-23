@@ -1,5 +1,10 @@
 # Strapi Plugin Section Divider
 
+> [!IMPORTANT]
+> **This plugin has moved to [Strapi Field Kit](https://github.com/finnwasabi/strapi-field-kit/tree/main/packages/section-divider).**
+> Version 2.0 and later are developed there; please open issues and pull requests in that repository.
+> The npm package name is unchanged, and 1.x releases stay installable. See the [upgrade notes](https://github.com/finnwasabi/strapi-field-kit/tree/main/packages/section-divider#upgrading-from-1x).
+
 A Strapi custom field plugin that adds visual section dividers to organize your content-type forms.
 
 [![npm version](https://img.shields.io/npm/v/@tunghtml/strapi-plugin-section-divider.svg)](https://www.npmjs.com/package/@tunghtml/strapi-plugin-section-divider)
